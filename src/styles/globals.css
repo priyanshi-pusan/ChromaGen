@@ -36,7 +36,7 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 800;
 
-  background: linear-gradient(110.42deg, #cf57a3 29.2%, #27ae60 63.56%);
+  background: linear-gradient(110.42deg, #9c61c9 29.2%, #78bfe0 63.56%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,25 @@ header .input {
   justify-content: center;
   gap: 1rem;
 }
+image {
+  width: 48rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
 
-.custom-icon {
-  font-size: 10px;
+.image:hover {
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.13);
+}
+.image img {
+  width: calc(100% + 1rem);
+  height: calc(100% + 0.5rem);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5 rem;
 }
